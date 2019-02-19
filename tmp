@@ -1,0 +1,19 @@
+hugo new site my-presentation
+cd my-presentation
+hugo new post/first.md
+fiv first.md
+	:r!cat my-presentation-bup/content/default.md
+:theme:
+git init
+git submodule add git@github.com:dzello/reveal-hugo.git themes/reveal-hugo
+vim .gitmodules
+	:%d
+git add .gitmodules
+vim .git/config
+	:remove relevant section
+git rm --cached themes/reveal-hugo
+rm -rf .git/modules/themes/reveal-hugo
+git commit -m "Removed submodule "
+   PENDING Delete the now untracked submodule files rm -rf path_to_submodule
+:end theme:
+

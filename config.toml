@@ -1,0 +1,10 @@
+languageCode = "en-us"
+title = "My New Hugo Site"
+baseURL = "https://eupl-presentacion.herokuapp.com/"
+
+theme = "reveal-hugo"
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
